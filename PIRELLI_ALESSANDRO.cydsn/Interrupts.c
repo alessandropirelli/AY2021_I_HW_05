@@ -12,15 +12,20 @@
 
 #include "Interrupts.h"
 #include "GV.h"
+#include "I2C_Interface.h"
 
+ErrorCode error;
 
 CY_ISR(Debounce){
     if( Pin_Button_Read() == PRESSED){
         state++;
-        if(state>_200HZ){
-            state=_1HZ;
+        if(state == 6){
+            state = 0;
         } 
     }
+    
+    EEPROM_WriteByte(state, 0x00);   //Save state's latest value in the EEPROM's register
+    
 }
 
 /* [] END OF FILE */
