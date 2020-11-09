@@ -12,15 +12,6 @@
 
 #include "project.h"
 
-#define PRESSED 0
-
-#define _1HZ 0x17
-#define _10HZ 0x27
-#define _25HZ 0x37
-#define _50HZ 0x47
-#define _100HZ 0x57
-#define _200HZ 0x67
-
 /**
 *   \brief 7-bit I2C address of the slave device.
 */
@@ -42,11 +33,6 @@
 #define LIS3DH_CTRL_REG1 0x20
 
 /**
-*   \brief Hex value to set normal mode to the accelerator
-*/
-#define LIS3DH_NORMAL_MODE_CTRL_REG1 0x47
-
-/**
 *   \brief  Address of the Temperature Sensor Configuration register
 */
 #define LIS3DH_TEMP_CFG_REG 0x1F
@@ -59,14 +45,21 @@
 /**
 *   \brief Address of the ADC output LSB register
 */
-#define LIS3DH_OUT_ADC_3L 0x0C
+#define LIS3DH_MODE_ADC 0x88   //HR, +-2g scale, sensitivity 1mg/digit
 
 /**
-*   \brief Address of the ADC output MSB register
+*   \brief Address of the ADC output LSB register
 */
-#define LIS3DH_OUT_ADC_3H 0x0D
+#define LIS3DH_OUT_X_L 0x28
 
-uint8 state;
+#define LIS3DH_OUT_X_H 0x29
 
+#define LIS3DH_OUT_Y_L 0x2A
+
+#define LIS3DH_OUT_Y_H 0x2B
+
+#define LIS3DH_OUT_Z_L 0x2C
+
+#define LIS3DH_OUT_Z_H 0x2D
 
 /* [] END OF FILE */

@@ -14,10 +14,12 @@
     #define __INTERRUPTS_H
     
     #include "project.h"
-        
+    #include "ErrorCodes.h"
+    
     CY_ISR_PROTO(Debounce);
     
-    
+    extern uint8_t mode;
+    extern ErrorCode error;
     
 #endif
 

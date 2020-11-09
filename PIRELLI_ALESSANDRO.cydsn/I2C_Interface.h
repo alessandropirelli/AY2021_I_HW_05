@@ -17,6 +17,7 @@
     #include "ErrorCodes.h"
     #include "project.h"
     
+    
     /** \brief Start the I2C peripheral.
     *   
     *   This function starts the I2C peripheral so that it is ready to work.

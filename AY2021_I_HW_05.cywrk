@@ -52,7 +52,7 @@
 <wrkspc_dependency project="MAESTRONI_MARCO.cydsn\MAESTRONI_MARCO.cyprj" dependency="..\..\..\Documents\PSoC Creator\AnnotationLibrary\AnnotationLibrary_lib\AnnotationLibrary_lib.cylib\AnnotationLibrary_lib.cyprj" />
 <wrkspc_dependency project="PAPPOLLA_MARGHERITA.cydsn\PAPPOLLA_MARGHERITA.cyprj" dependency="..\..\..\Documents\PSoC Creator\AnnotationLibrary\AnnotationLibrary_lib\AnnotationLibrary_lib.cylib\AnnotationLibrary_lib.cyprj" />
 <wrkspc_dependency project="PEDICA_BENEDETTA.cydsn\PEDICA_BENEDETTA.cyprj" dependency="..\..\..\Documents\PSoC Creator\AnnotationLibrary\AnnotationLibrary_lib\AnnotationLibrary_lib.cylib\AnnotationLibrary_lib.cyprj" />
-<wrkspc_dependency project="PIRELLI_ALESSANDRO.cydsn\PIRELLI_ALESSANDRO.cyprj" dependency="..\..\..\Documents\PSoC Creator\AnnotationLibrary\AnnotationLibrary_lib\AnnotationLibrary_lib.cylib\AnnotationLibrary_lib.cyprj" />
+<wrkspc_dependency project="PIRELLI_ALESSANDRO.cydsn\PIRELLI_ALESSANDRO.cyprj" dependency="${CyRoot}\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj" />
 <wrkspc_dependency project="PIRELLI_ALESSANDRO.cydsn\PIRELLI_ALESSANDRO.cyprj" dependency="..\..\Downloads\PSoC_AnnotationLibrary\AnnotationLibrary\AnnotationLibrary_lib\AnnotationLibrary_lib.cylib\AnnotationLibrary_lib.cyprj" />
 <wrkspc_dependency project="RESCALLI_ANDREA.cydsn\RESCALLI_ANDREA.cyprj" dependency="..\..\..\Documents\PSoC Creator\AnnotationLibrary\AnnotationLibrary_lib\AnnotationLibrary_lib.cylib\AnnotationLibrary_lib.cyprj" />
 <wrkspc_dependency project="SALA_DAVIDE.cydsn\SALA_DAVIDE.cyprj" dependency="..\..\..\Documents\PSoC Creator\AnnotationLibrary\AnnotationLibrary_lib\AnnotationLibrary_lib.cylib\AnnotationLibrary_lib.cyprj" />
