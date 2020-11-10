@@ -18,24 +18,10 @@
 #define LIS3DH_DEVICE_ADDRESS 0x18
 
 /**
-*   \brief Address of the WHO AM I register
-*/
-#define LIS3DH_WHO_AM_I_REG_ADDR 0x0F
-
-/**
-*   \brief Address of the Status register
-*/
-#define LIS3DH_STATUS_REG 0x27
-
-/**
 *   \brief Address of the Control register 1
 */
 #define LIS3DH_CTRL_REG1 0x20
 
-/**
-*   \brief  Address of the Temperature Sensor Configuration register
-*/
-#define LIS3DH_TEMP_CFG_REG 0x1F
 
 /**
 *   \brief Address of the Control register 4
@@ -43,12 +29,18 @@
 #define LIS3DH_CTRL_REG4 0x23
 
 /**
-*   \brief Address of the ADC output LSB register
+*   \Control register 4 settings
 */
-#define LIS3DH_MODE_ADC 0x88   //HR, +-2g scale, sensitivity 1mg/digit
+#define LIS3DH_HR_2G 0x88   //High resolution mode, +-2g full scale range --> sensitivity 1mg/digit
+
+#define LIS3DH_HR_4G 0x98   //High resolution mode, +-4g full scale range
+
+#define LIS3DH_HR_8G 0xA8   //High resolution mode, +-8g full scale range
+
+#define LIS3DH_HR_16G 0xB8  //High resolution mode, +-16g full scale range
 
 /**
-*   \brief Address of the ADC output LSB register
+*   \brief Address of the acceleration output registers
 */
 #define LIS3DH_OUT_X_L 0x28
 

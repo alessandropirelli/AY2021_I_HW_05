@@ -123,15 +123,7 @@
         I2C_MasterSendStop();
         return error ? ERROR : NO_ERROR;
     }
-    
-    /*ErrorCode I2C_Interface_WriteRegisterMulti(uint8_t device_address,
-                                            uint8_t register_address,
-                                            uint8_t register_count,
-                                            uint8_t* data)
-    {
-        // TODO
-    }*/
-    
+        
     
     uint8_t I2C_Interface_IsDeviceConnected(uint8_t device_address)
     {
