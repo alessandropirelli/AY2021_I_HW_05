@@ -1,9 +1,4 @@
-/*
-* This file includes all the required source code to interface
-* the I2C peripheral.
-*
-* This file needs to be completed.
-*/
+
 
 /**
 *   \brief Value returned if device present on I2C bus.
@@ -42,8 +37,8 @@
     }
 
     ErrorCode I2C_Interface_ReadRegister(uint8_t device_address, 
-                                            uint8_t register_address,
-                                            uint8_t* data)
+                                         uint8_t register_address,
+                                         uint8_t* data)
     {
         // Send start condition
         uint8_t error = I2C_MasterSendStart(device_address,I2C_WRITE_XFER_MODE);
@@ -69,9 +64,9 @@
     }
     
     ErrorCode I2C_Interface_ReadRegisterMulti(uint8_t device_address,
-                                                uint8_t register_address,
-                                                uint8_t register_count,
-                                                uint8_t* data)
+                                              uint8_t register_address,
+                                              uint8_t register_count,
+                                              uint8_t* data)
     {
         // Send start condition
         uint8_t error = I2C_MasterSendStart(device_address,I2C_WRITE_XFER_MODE);
@@ -107,8 +102,8 @@
     }
     
     ErrorCode I2C_Interface_WriteRegister(uint8_t device_address,
-                                            uint8_t register_address,
-                                            uint8_t data)
+                                          uint8_t register_address,
+                                          uint8_t data)
     {
         //Start condition
         uint8_t error = I2C_MasterSendStart(device_address, I2C_WRITE_XFER_MODE);
